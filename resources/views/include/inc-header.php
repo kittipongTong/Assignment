@@ -9,7 +9,7 @@
                                 <a href="index.html">
                                   <p>
                                     <img src="finloans/img/footer_logoaa.png"  width="50"  alt="">
-                                   ระบบส่งงานผู้บริหาร
+                                  <h3>ระบบส่งงานผู้บริหาร</h3> 
                                   </p>
                                     <!-- <img src="finloans/img/footer_logo.png"   alt=""> -->
                                 </a>
@@ -21,9 +21,10 @@
                                     <ul id="navigation">
                                          <li><a href="index.html">หน้าหลัก</a></li>
                                           <li><a href="about.html">เกี่ยวกับ</a></li>
-                                          <li><a href="Loan.html">สมัครสมาชิก</a></li>
+
 
                                         <li><a href="contact.html">ติดต่อ</a></li>
+                                          <li><a href="Loan.html">สมัครสมาชิก</a></li>
                                     </ul>
                                 </nav>
                             </div>

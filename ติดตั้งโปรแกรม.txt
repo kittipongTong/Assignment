@@ -1,6 +1,14 @@
 รันผ่าน cmd
 cd ตามด้วยที่อยู่ไฟล์
 dir
-ren .env.example .env
+.env.example .env
+
 composer update --verbose --prefer-dist
+
 php artisan key:generate
+
+composer require spatie/laravel-permission
+
+composer require barryvdh/laravel-debugbar --dev
+
+php artisan make:middleware AdminMiddleware

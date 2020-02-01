@@ -16,11 +16,19 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('phone');
+            $table->string('usertype')->nullable();    //admin
+            $table->string('seniormanagement')->nullable(); //ผู้บริหารระดับสูง
+            $table->string('topmanagement')->nullable(); //ผู้บริหารระดับต้น
+            $table->string('groupleader')->nullable(); //หัวหน้ากลุ่ม
+            $table->string('thestaff')->nullable();  //พนักงาน
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+
+
         });
     }
 
