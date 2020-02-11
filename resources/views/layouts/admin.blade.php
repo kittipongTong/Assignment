@@ -49,7 +49,25 @@
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
 						<li class="nav-item">
 							<a href="../../examples/demo1" class="nav-link">
-								Live Preview
+
+								<li class="nav-item dropdown">
+										<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+												{{ Auth::user()->name }} <span class="caret"></span>
+										</a>
+
+										<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+												<a class="dropdown-item" href="{{ route('logout') }}"
+													 onclick="event.preventDefault();
+																				 document.getElementById('logout-form').submit();">
+														ออกจากระบบ
+												</a>
+
+												<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+														@csrf
+												</form>
+										</div>
+								</li>
+
 							</a>
 						</li>
 					</ul>
@@ -72,12 +90,11 @@
 							<span class="sidebar-mini-icon">
 								<i class="fa fa-ellipsis-h"></i>
 							</span>
-							<h4 class="text-section">Components</h4>
+							<h4 class="text-section">จัดการ</h4>
 						</li>
 						<li class="nav-item">
 							<a href="#">
-								<span class="letter-icon">A</span>
-								<p>Alerts</p>
+								<span class="fa fa-address-book"> กำหนดสิทธิ์ </span>
 							</a>
 						</li>
 						<li class="nav-item">
